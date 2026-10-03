@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f7f8">
+  <title>Clara — Gestión clínica</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#dashboard" aria-label="Clara, ir al inicio"><span class="brand-mark">✳</span><span>clara<span class="brand-dot">.</span></span></a>
+      <nav class="nav" id="main-nav">
+        <a href="#dashboard" data-nav="dashboard"><span class="nav-icon">▦</span> Dashboard</a>
+        <a href="#patients" data-nav="patients"><span class="nav-icon">♧</span> Pacientes</a>
+      </nav>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div class="topbar-left"><button class="menu-button" id="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button><span id="breadcrumb">Dashboard</span></div></header>
+      <main id="app" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
